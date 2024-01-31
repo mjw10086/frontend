@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/custom.css" rel="stylesheet">
+    <link href="./styles/circle.css" rel="stylesheet">
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-darkblue container-fluid h-100 p-0 d-flex">
+    <div class="col-2 h-100 d-flex flex-column justify-content-between">
+        <div>
+            <div class="pt-4 pb-4 text-light fs-5">
+                <img src="./assets/logo.svg" alt="SVG Image">
+                IRONLINK
+            </div>
+            <nav class="nav flex-column">
+                <a class="text-light fs-7 nav-link active me-2 px-0 d-flex" aria-current="page" href="#">
+                    <img src="./assets/Line.svg" alt="SVG Image">
+                    <div class="d-flex align-items-center ps-4">
+                        <img src="./assets/category.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Dashboard</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/list.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Balance & Billing</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/Vector.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Manage Plan</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/monitor-mobbile.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Devices And App</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/profile.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Account Settings</span>
+                    </div>
+                </a>
+            </nav>
+        </div>
+        <div class="d-flex flex-column justify-content-center ps-4 mb-5">
+            <div class="text-light fs-7 my-3">
+                <i class="bi bi-question-circle me-3"></i> Get Help
+            </div>
+            <button class="btn btn-outline-info fs-7">
+                Sign Out
+            </button>
+        </div>
+    </div>
+    <div class="panel h-100 px-5 py-4"
+        style="overflow-y: auto; scrollbar-width: thin; scrollbar-color: darkgrey lightgrey;">
+        <div class="p-2">
+            <div class="fs-4 text-light">Dashboard</div>
+        </div>
+        <div class="d-flex flex-wrap">
+            <div class="col-4 p-2">
+                <div class="card rounded-4 bg-black text-bg-dark p-4 d-flex justify-content-between">
+                    <div class="fs-4">Basic Plan</div>
+                    <span class="fs-8">50GB/Month with up to 5 devices </span>
+                    <button class="btn bg-gray text-light mt-4">Manage Plan</button>
+                </div>
+            </div>
+            <div class="col-8 p-2">
+                <div class="card rounded-4 bg-black text-bg-dark p-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="fs-5">Available credit: </span>
+                            <span class="fs-4 fw-bold">$15</span>
+                        </div>
+                        <span class="text-azure">Billing History</span>
+                    </div>
+                    <span class="fs-8">Should last till July 1, 2024</span>
+                    <div class="d-flex justify-content-between mt-4">
+                        <div class="col-6 pe-1">
+                            <button class="w-100 btn bg-gray text-light col-6">Top up</button>
+                        </div>
+                        <div class="col-6 ps-1">
+                            <button class="w-100 btn btn-outline-light col-6">Set up auto-recurring payments</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-2">
+                    <div class="card rounded-4 bg-black text-bg-dark p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="fs-6">Your Devices</div>
+                            <span class="text-azure">Edit</span>
+                        </div>
+                        <span class="fs-8">3 devices activated</span>
+                        <ul class="mt-4 list-unstyled">
+                            <li class="text-light d-flex align-items-center mb-2">
+                                <div class="green-circle me-3"></div>
+                                <span class="fs-7 text-gray">iPhone 12 Pro</span>
+                            </li>
+                            <li class="text-light d-flex align-items-center mb-2">
+                                <div class="green-circle me-3"></div>
+                                <span class="fs-7 text-gray">Macbook Air M2</span>
+                            </li>
+                            <li class="text-light d-flex align-items-center mb-2">
+                                <div class="green-circle me-3"></div>
+                                <span class="fs-7 text-gray">Samsung Galaxy A1</span>
+                            </li>
+                        </ul>
+                        <button class="btn bg-azure mt-3">Activate a new device</button>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="card rounded-4 bg-black text-bg-dark p-4">
+                        <div class="fs-5">Remaining Data This Month</div>
+                        <span class="fs-8">Resets on Feb 1, 2024</span>
+                        <div class="usage_container">
+                            <div class="circle w-50">
+                                <svg id="usage" data-percent="0.8">
+                                    <circle id="circle" cx="50%" cy="50%" r="40%" stroke="#00FF00" stroke-width="10"
+                                        fill="transparent" />
+                                </svg>
+                                <div class="text fs-7">
+                                    <span>40GB<span>/50GB</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn bg-azure mt-3">Get one-time extra data</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 p-2">
+                <div class="card rounded-4 bg-black text-bg-dark p-4">
+                    <div class="fs-5 mb-3">Announcements</div>
+                    <div class="my-3">
+                        <span class="fs-8">2024-01-01: Yo, wazzup</span>
+                        <p class="fs-6 mt-3">
+                            Lorem ipsum dolor sit amet, vim at ancillae maiestatis, id veri ullum usu, nec viderer
+                            platonem
+                            disputando ea. Vis ex legendos posidonium. Postea nemore singulis no pro. Vel ex praesent
+                            intellegat incorrupte, mei eu facilis verterem expetenda. Te quot mollis temporibus vis, mea
+                            an
+                            discere alterum ancillae. Ut summo error nullam per. Probo voluptaria per ne, cum adipisci
+                            reprimique ei, voluptatum reprimique ad qui.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <div class="col-6 pe-1">
+                                <button class="w-100 btn bg-gray text-light col-6">Dismiss</button>
+                            </div>
+                            <div class="col-6 ps-1">
+                                <button class="w-100 btn btn-outline-light col-6">Open</button>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <span class="fs-8">2024-01-01: Yo, wazzup</span>
+                        <p class="fs-6 mt-3">
+                            Lorem ipsum dolor sit amet, vim at ancillae maiestatis, id veri ullum usu, nec viderer
+                            platonem
+                            disputando ea. Vis ex legendos posidonium. Postea nemore singulis no pro. Vel ex praesent
+                            intellegat incorrupte, mei eu facilis verterem expetenda. Te quot mollis temporibus vis, mea
+                            an
+                            discere alterum ancillae. Ut summo error nullam per. Probo voluptaria per ne, cum adipisci
+                            reprimique ei, voluptatum reprimique ad qui.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <div class="col-6 pe-1">
+                                <button class="w-100 btn bg-gray text-light col-6">Dismiss</button>
+                            </div>
+                            <div class="col-6 ps-1">
+                                <button class="w-100 btn btn-outline-light col-6">Open</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .usage_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle {
+        border-radius: 50%;
+        position: relative;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    let size = document.getElementById("usage").clientWidth - 30;
+    console.log(size)
+    let circle = document.getElementById("circle");
+    let percent = parseFloat(document.getElementById("usage").getAttribute("data-percent"));
+    console.log(percent);
+    circle.setAttribute("stroke-dasharray", `${size * 3.14 * percent} ${size * 3.14 * (1 - percent)}`);
+    circle.setAttribute("stroke-dashoffset", `${-size * 3.14 * (1 - percent) / 2}`);
+</script>
+
+</html>

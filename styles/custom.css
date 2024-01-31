@@ -1,0 +1,72 @@
+.fs-7 {
+    font-size: 0.85rem !important;
+}
+
+.fs-8 {
+    font-size: 0.75rem !important;
+}
+
+.bg-black {
+    --bs-bg-opacity: 1;
+    background-color: rgb(14, 14, 14) !important;
+}
+
+.bg-darkblue2 {
+    --bs-bg-opacity: 1;
+    background-color: rgb(26, 28, 42) !important;
+}
+
+.bg-azure {
+    --bs-bg-opacity: 1;
+    background-color: rgb(176, 228, 244) !important;
+}
+
+.bg-darkazure {
+    --bs-bg-opacity: 1;
+    background-color: rgb(116, 149, 163) !important;
+}
+
+.bg-gray {
+    --bs-bg-opacity: 1;
+    background-color: #41455F !important;
+}
+
+.text-azure {
+    color: rgb(176, 228, 244) !important;
+}
+
+.text-gray {
+    --bs-text-opacity: 1;
+    color: #e5e5e5 !important;
+}
+
+.bg-darkblue {
+    --bs-bg-opacity: 1;
+    background-color: rgb(24, 27, 48) !important;
+}
+
+.green-circle {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.red-circle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(128, 0, 0);
+    border-radius: 50%;
+}
+
+.placeholder-text-white::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.line {
+    display: inline-block;
+    width: 150px;
+    border-top: 1px solid #cccccc;
+    vertical-align: 5px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/custom.css" rel="stylesheet">
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-darkblue container-fluid h-100 p-0 d-flex">
+    <div class="col-2 h-100 d-flex flex-column justify-content-between">
+        <div>
+            <div class="pt-4 pb-4 text-light fs-5">
+                <img src="./assets/logo.svg" alt="SVG Image">
+                IRONLINK
+            </div>
+            <nav class="nav flex-column">
+                <a class="text-light fs-7 nav-link active me-2 px-0 d-flex" aria-current="page" href="#">
+                    <img src="./assets/Line.svg" alt="SVG Image">
+                    <div class="d-flex align-items-center ps-4">
+                        <img src="./assets/category.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Dashboard</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/list.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Balance & Billing</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/Vector.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Manage Plan</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/monitor-mobbile.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Devices And App</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/profile.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Account Settings</span>
+                    </div>
+                </a>
+            </nav>
+        </div>
+        <div class="d-flex flex-column justify-content-center ps-4 mb-5">
+            <div class="text-light fs-7 my-3">
+                <i class="bi bi-question-circle me-3"></i> Get Help
+            </div>
+            <button class="btn btn-outline-info fs-7">
+                Sign Out
+            </button>
+        </div>
+    </div>
+    <div class="panel h-100 px-5 py-4 w-100"
+        style="overflow-y: auto; scrollbar-width: thin; scrollbar-color: darkgrey lightgrey;">
+        <div class="p-2">
+            <div class="fs-4 text-light">Balance & Billing</div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center" style="height: calc(100% - 55px);">
+            <div class="col-12 p-2 h-100">
+                <div class="card rounded-4 bg-black text-bg-dark p-4 h-100">
+                    <div class="col-12 d-flex gap-5 h-100">
+                        <div class="card col-3 bg-gray text-light px-3 py-4">
+                            <div class="mb-5">
+                                <div>Availble credit: $15</div>
+                                <div class="fs-8 fw-lighter text-gray">should last till March 31, 2024</div>
+                            </div>
+                            <div class="mb-5">
+                                <span class="fs-8 fw-lighter text-gray">Balance & billing</span>
+                                <hr class="mt-0" />
+                                <div class="d-flex flex-column ms-2 gap-4 fs-7 ">
+                                    <span class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <img style="width: 18px;" src="./assets/top up.svg" alt="SVG Image"
+                                                class="me-2">
+                                            One Time top-up
+                                        </div>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                    <span class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <img style="width: 18px;" src="./assets/repeat.svg" alt="SVG Image"
+                                                class="me-2">
+                                            Withdraw Balance
+                                        </div>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                    <span class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <img style="width: 18px;" src="./assets/export.svg" alt="SVG Image"
+                                                class="me-2">
+                                            Set up automatic top-ups
+                                        </div>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <span class="fs-8 fw-lighter text-gray">History</span>
+                                <hr class="mt-0" />
+                                <div class="d-flex flex-column ms-3 gap-4">
+                                    <span class="d-flex align-items-center justify-content-between fs-7">
+                                        Billing History
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                    <span class="d-flex align-items-center justify-content-between fs-7">
+                                        Top up & Withdraw History
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div>Top Up credit</div>
+                            <div class="fs-8 fw-lighter text-gray">Credit will be be used to auto-renew your Ironlink
+                                plan. You can withdraw it anytime.</div>
+                            <form class="p-4 col-10">
+                                <div class="d-flex flex-column mb-4 gap-3">
+                                    <label>Enter amount</label>
+                                    <input type="text" id="disabledTextInput"
+                                        class="placeholder-text-white bg-darkblue2 form-control"
+                                        style="border: 0; color: white;" />
+                                </div>
+                                <hr class="mx-5"/>
+                                <div class="my-4">
+                                    <label>Select payment method</label>
+                                    <div class="my-3">
+                                        <div class="d-flex input-group">
+                                            <input type="text" class="form-control"
+                                                placeholder="Pay with credit or debit card">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="text-warning fs-8 mt-1"><i class="bi bi-info-circle-fill me-2"></i>Card
+                                            payments under ~$10 are currently disabled.</div>
+                                    </div>
+                                    <div class="my-3 d-flex input-group">
+                                        <input type="text" class="form-control"
+                                            placeholder="USDT/Tether via Polygon lowest fees">
+                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                    </div>
+
+                                    <div class="my-3 d-flex input-group">
+                                        <input type="text" class="form-control"
+                                            placeholder="Any other crypto via your network of choice">
+                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                    </div>
+                                </div>
+                                <hr class="mx-5"/>
+                                <button class="my-3 btn bg-azure w-100">Proceed To Pay</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

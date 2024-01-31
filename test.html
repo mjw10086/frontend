@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #222;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #333;
+      position: relative;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .text span {
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00FF00;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="circle">
+      <svg id="usage" data-percent="0.7">
+        <circle id="circle" cx="50%" cy="50%" r="40%" stroke="#00FF00" stroke-width="10" fill="transparent" />
+      </svg>
+      <div class="text">
+        <h1>40GB<span>/50GB</span></h1>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  let size = document.getElementById("usage").clientHeight - 40;
+  console.log(size)
+  let circle = document.getElementById("circle");
+  let percent = parseFloat(document.getElementById("usage").getAttribute("data-percent"));
+  console.log(percent);
+  circle.setAttribute("stroke-dasharray", `${size * 3.14 * percent} ${size * 3.14 * (1 - percent)}`);
+  circle.setAttribute("stroke-dashoffset", `${-size * 3.14 * (1 - percent) / 2}`);
+</script>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/custom.css" rel="stylesheet">
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-darkblue container-fluid h-100 p-0 d-flex">
+    <div class="col-2 h-100 d-flex flex-column justify-content-between">
+        <div>
+            <div class="pt-4 pb-4 text-light fs-5">
+                <img src="./assets/logo.svg" alt="SVG Image">
+                IRONLINK
+            </div>
+            <nav class="nav flex-column">
+                <a class="text-light fs-7 nav-link active me-2 px-0 d-flex" aria-current="page" href="#">
+                    <img src="./assets/Line.svg" alt="SVG Image">
+                    <div class="d-flex align-items-center ps-4">
+                        <img src="./assets/category.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Dashboard</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/list.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Balance & Billing</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/Vector.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Manage Plan</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/monitor-mobbile.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Devices And App</span>
+                    </div>
+                </a>
+                <a class="text-light fs-7 nav-link active my-2 px-0" aria-current="page" href="#">
+                    <div class="d-flex align-items-center ps-4" style="margin: 6px;">
+                        <img src="./assets/profile.svg" alt="SVG Image">
+                        <span class="ms-3 text-gray fw-light">Account Settings</span>
+                    </div>
+                </a>
+            </nav>
+        </div>
+        <div class="d-flex flex-column justify-content-center ps-4 mb-5">
+            <div class="text-light fs-7 my-3">
+                <i class="bi bi-question-circle me-3"></i> Get Help
+            </div>
+            <button class="btn btn-outline-info fs-7">
+                Sign Out
+            </button>
+        </div>
+    </div>
+    <div class="panel h-100 px-5 py-4 w-100"
+        style="overflow-y: auto; scrollbar-width: thin; scrollbar-color: darkgrey lightgrey;">
+        <div class="p-2">
+            <div class="fs-4 text-light">My Devices</div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center">
+            <div class="col-12 p-2 h-100">
+                <div class="card rounded-4 bg-black text-bg-dark px-4 py-3 h-100">
+                    <div class="d-flex">
+                        <div class="col-6 py-4 pe-5">
+                            <div class="mb-5">
+                                <div>Active Devices</div>
+                                <div class="fs-8 fw-lighter">3 out of 4 devices limit</div>
+                                <hr class="mx-4" />
+                                <ul class="mt-4 list-unstyled">
+                                    <li class="text-light mb-2 d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="green-circle me-3"></div>
+                                            <span class="fs-7 text-gray">iPhone 12 Pro</span>
+                                            <a class="text-gray fs-8 fw-lighter ms-2">remove</a>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch">
+                                        </div>
+                                    </li>
+                                    <li class="text-light mb-2 d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="green-circle me-3"></div>
+                                            <span class="fs-7 text-gray">Macbook Air M2</span>
+                                            <a class="text-gray fs-8 fw-lighter ms-2">remove</a>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch">
+                                        </div>
+                                    </li>
+                                    <li class="text-light mb-2 d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="green-circle me-3"></div>
+                                            <span class="fs-7 text-gray">Samsung Galaxy A1</span>
+                                            <a class="text-gray fs-8 fw-lighter ms-2">remove</a>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="w-100 btn bg-azure mt-3">Download & activate app</button>
+                            </div>
+                            <div>
+                                <div>Deactivated Devices</div>
+                                <div class="fs-8 fw-lighter">2 devices</div>
+                                <hr class="mx-4" />
+                                <ul class="mt-4 list-unstyled">
+                                    <li class="text-light mb-2 d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="red-circle me-3"></div>
+                                            <span class="fs-7 text-gray">iPhone X</span>
+                                            <a class="text-gray fs-8 fw-lighter ms-2">remove</a>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch">
+                                        </div>
+                                    </li>
+                                    <li class="text-light mb-2 d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="red-circle me-3"></div>
+                                            <span class="fs-7 text-gray">MacBook Pro M1</span>
+                                            <a class="text-gray fs-8 fw-lighter ms-2">remove</a>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 p-3">
+                            <div class="card bg-gray text-light px-4 py-3">
+                                <div class="mb-4">
+                                    <div class="mb-2 fs-7">1. Download application</div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div class="card" style="width: 150px;">
+                                                <div class="fs-8">Get it on</div>
+                                                <div class="fs-7 fw-semibold">Google Play</div>
+                                            </div>
+                                            <span>or</span>
+                                            <div class="card" style="width: 150px;">
+                                                <div class="fs-8">Android direct</div>
+                                                <div class="fs-7 fw-semibold">Download</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div class="card" style="width: 150px;">
+                                                <div class="fs-8">MacOS intel</div>
+                                                <div class="fs-7 fw-semibold">Download</div>
+                                            </div>
+                                            <span>or</span>
+                                            <div class="card" style="width: 150px;">
+                                                <div class="fs-8">MacOS Apple Silicon</div>
+                                                <div class="fs-7 fw-semibold">Download</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="card" style="width: 150px;">
+                                                <div class="fs-8">Get it on</div>
+                                                <div class="fs-7 fw-semibold">App Store</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="card" style="width: 150px;">
+                                                <div class="fs-8">Windows 10+</div>
+                                                <div class="fs-7 fw-semibold">Download</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="mb-2 fs-7">2. Copy the Activation Code</div>
+                                    <div class="px-5">
+                                        <div class="input-group">
+                                            <input class="form-control fs-8" disabled="true"
+                                                value="453ddhgvh787bjhbdsfc" />
+                                            <span class="input-group-text fs-8">copy</span>
+                                        </div>
+                                        <div class="text-light fs-8 mt-1 d-flex justify-content-between">
+                                            <div>
+                                                <i class="bi bi-info-circle-fill me-2"></i>
+                                                <span>Code valid for 30 minutes</span>
+                                            </div>
+                                            <span class="text-warning">00:27</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="fs-7">3. Paste the code to the newly installed app</div>
+                                </div>
+                                <div>
+                                    <div class="fs-7">4. Activate another device(optional)</div>
+                                    <div class="px-5">
+                                        <button class="my-3 btn btn-secondary w-100 fs-8">Generate activation
+                                            code</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-4 my-3">
+                                <div class="text-center mb-3">Anything went wrong?</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="col-6 px-2">
+                                        <button class="col-12 btn btn-secondary fs-8">FAQ</button>
+                                    </div>
+                                    <div class="col-6 px-2">
+                                        <button class="col-12 btn btn-outline-info fs-8">Contact support</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
