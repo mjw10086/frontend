@@ -81,7 +81,7 @@
                                 <hr class="mt-0" />
                                 <div class="d-flex flex-column ms-2 gap-4 fs-8">
                                     <span class="d-flex align-items-center justify-content-between">
-                                        <div>
+                                        <div class="d-flex align-items-center">
                                             <img style="width: 15px;" src="./assets/top up.svg" alt="SVG Image"
                                                 class="me-2">
                                             One Time top-up
@@ -89,7 +89,7 @@
                                         <i class="bi bi-chevron-right"></i>
                                     </span>
                                     <span class="d-flex align-items-center justify-content-between">
-                                        <div>
+                                        <div class="d-flex align-items-center">
                                             <img style="width: 15px;" src="./assets/repeat.svg" alt="SVG Image"
                                                 class="me-2">
                                             Withdraw Balance
@@ -97,7 +97,7 @@
                                         <i class="bi bi-chevron-right"></i>
                                     </span>
                                     <span class="d-flex align-items-center justify-content-between">
-                                        <div>
+                                        <div class="d-flex align-items-center">
                                             <img style="width: 15px;" src="./assets/export.svg" alt="SVG Image"
                                                 class="me-2">
                                             Set up automatic top-ups
@@ -121,71 +121,72 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8">
-                            <div>Top Up credit</div>
-                            <div class="fs-8 fw-lighter text-gray">Credit will be be used to auto-renew your Ironlink
-                                plan. You can withdraw it anytime.</div>
-                            <form class="p-4 col-10">
-                                <div class="d-flex flex-column mb-4 gap-3">
-                                    <label>Enter amount</label>
-                                    <div>
-                                        <input type="text" id="disabledTextInput"
-                                            class="placeholder-text-white bg-darkblue2 border-0 form-control text-gray py-2 px-3" value="$8" />
-                                        <div class="text-secondary fs-8 mt-1">
-                                            <i class="bi bi-info-circle-fill me-2"></i>
-                                            Card payments under ~$10 are currently disabled.
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="mx-5" />
-                                <div class="my-4">
-                                    <label>Select payment method</label>
-                                    <div class="form-check bg-darkblue2 rounded-2 mt-3">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    Pay with credit or debit card
-                                                </label>
-                                            </div>
-                                            <img src="./assets/cards.svg" style="height: 30px;">
-                                        </div>
-                                    </div>
-                                    <div class="text-warning fs-8 mt-1 mb-3">
-                                        Card payments under ~$10 are currently disabled.
-                                    </div>
-                                    <div class="form-check bg-darkblue2 rounded-2 mb-3">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    USDT/Tether via Polygon lowest fees
-                                                </label>
-                                            </div>
-                                            <img src="./assets/T.svg" style="height: 30px;">
-                                        </div>
-                                    </div>
-                                    <div class="form-check bg-darkblue2 rounded-2">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    Any other crypto via your network of choice
-                                                </label>
-                                            </div>
-                                            <img src="./assets/cryptoicon.svg" style="height: 23px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="mx-5" />
-                                <button class="my-3 btn bg-azure w-100">Proceed To Pay</button>
-                            </form>
+                        <div class="col-8 h-100">
+                            <div>Billing History</div>
+                            <div class="fs-8 fw-lighter text-gray">blahNam quis convallis elit. Sed fermentum magna nec
+                            </div>
+                            <div class="py-3 col-11" style="height: calc(100% - 50px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: darkgrey lightgrey;">
+                                <table class="table fs-8 table-empty">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Plan</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Doc</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Mar 23, 2022</th>
+                                            <td>Ironlink Basic</td>
+                                            <td>$2.5</td>
+                                            <td><a href="#">Invoice</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

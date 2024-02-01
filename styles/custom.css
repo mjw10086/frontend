@@ -6,6 +6,10 @@
     font-size: 0.75rem !important;
 }
 
+.fs-9 {
+    font-size: 0.50rem !important;
+}
+
 .bg-black {
     --bs-bg-opacity: 1;
     background-color: rgb(14, 14, 14) !important;
@@ -45,6 +49,12 @@
     background-color: rgb(24, 27, 48) !important;
 }
 
+.bg-shadowdark {
+    --bs-bg-opacity: 1;
+    background-color: rgb(43, 45, 61) !important;
+}
+
+
 .green-circle {
     width: 10px;
     height: 10px;
@@ -69,4 +79,39 @@
     width: 150px;
     border-top: 1px solid #cccccc;
     vertical-align: 5px;
+}
+
+.table-empty {
+    --bs-table-color: #ffffff;
+    --bs-table-bg: #ffffff00;
+    --bs-table-border-color: #a6b5cc00;
+    --bs-table-striped-bg: #c5d7f2;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #bacbe6;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #bfd1ec;
+    --bs-table-hover-color: #000;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
+
+thead {
+    border-color: #8d8d8db5;
+}
+
+.table-empty td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.table-empty th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    color: transparent;
 }

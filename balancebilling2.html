@@ -122,70 +122,61 @@
                             </div>
                         </div>
                         <div class="col-8">
-                            <div>Top Up credit</div>
-                            <div class="fs-8 fw-lighter text-gray">Credit will be be used to auto-renew your Ironlink
-                                plan. You can withdraw it anytime.</div>
-                            <form class="p-4 col-10">
-                                <div class="d-flex flex-column mb-4 gap-3">
-                                    <label>Enter amount</label>
+                            <div
+                                style="height: calc(100% - 20px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: darkgrey lightgrey;">
+                                <div>Top Up credit</div>
+                                <div class="fs-8 fw-lighter text-gray">Credit will be be used to auto-renew your
+                                    Ironlink
+                                    plan. You can withdraw it anytime.</div>
+                                <form class="p-4 col-10">
+                                    <div class="d-flex flex-column mb-4 gap-3">
+                                        <label>Enter amount</label>
+                                        <div>
+                                            <input type="text" id="disabledTextInput"
+                                                class="placeholder-text-white bg-darkblue2 border-0 form-control text-gray py-2 px-3"
+                                                value="$8" />
+                                        </div>
+                                    </div>
+                                    <hr class="mx-5" />
                                     <div>
-                                        <input type="text" id="disabledTextInput"
-                                            class="placeholder-text-white bg-darkblue2 border-0 form-control text-gray py-2 px-3" value="$8" />
-                                        <div class="text-secondary fs-8 mt-1">
-                                            <i class="bi bi-info-circle-fill me-2"></i>
-                                            Card payments under ~$10 are currently disabled.
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="mx-5" />
-                                <div class="my-4">
-                                    <label>Select payment method</label>
-                                    <div class="form-check bg-darkblue2 rounded-2 mt-3">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
+                                        <label>Enter your wallet address & network</label>
+                                        <div class="mt-3">
                                             <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    Pay with credit or debit card
-                                                </label>
+                                                <label class="fs-7 ">Wallet Address</label>
+                                                <input type="text"
+                                                    class="form-control text-gray fw-lighter bg-darkblue border-0 mt-1 py-2"
+                                                    value="wallet address">
                                             </div>
-                                            <img src="./assets/cards.svg" style="height: 30px;">
+                                            <div class="mt-2">
+                                                <label class="fs-7 ">Network</label>
+                                                <select
+                                                    class="form-select text-gray fw-lighter bg-darkblue border-0 mt-1 py-2"
+                                                    aria-label="Default select example">
+                                                    <option selected>select network</option>
+                                                    <option value="1">
+                                                        <div>TRC20</div>
+                                                        <div>Tron(TRX)</div>
+                                                    </option>
+                                                    <option value="2">
+                                                        <div>TRC20</div>
+                                                        <div>Tron(TRX)</div>
+                                                    </option>
+                                                    <option value="3">
+                                                        <div>TRC20</div>
+                                                        <div>Tron(TRX)</div>
+                                                    </option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="text-warning fs-8 mt-1 mb-3">
-                                        Card payments under ~$10 are currently disabled.
+                                    <button class="mt-4 mb-3 btn bg-azure w-100">submit request for withdraw</button>
+                                    <hr class="mx-5" />
+                                    <div class="text-secondary fs-8 mt-1 d-flex">
+                                        <i class="bi bi-info-circle-fill me-2"></i>
+                                        <div>Your withdrawal request may take up to 7 business days to process. Thank you for your patience!</div>
                                     </div>
-                                    <div class="form-check bg-darkblue2 rounded-2 mb-3">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    USDT/Tether via Polygon lowest fees
-                                                </label>
-                                            </div>
-                                            <img src="./assets/T.svg" style="height: 30px;">
-                                        </div>
-                                    </div>
-                                    <div class="form-check bg-darkblue2 rounded-2">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    Any other crypto via your network of choice
-                                                </label>
-                                            </div>
-                                            <img src="./assets/cryptoicon.svg" style="height: 23px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="mx-5" />
-                                <button class="my-3 btn bg-azure w-100">Proceed To Pay</button>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
