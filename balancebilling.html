@@ -122,70 +122,78 @@
                             </div>
                         </div>
                         <div class="col-8">
-                            <div>Top Up credit</div>
-                            <div class="fs-8 fw-lighter text-gray">Credit will be be used to auto-renew your Ironlink
-                                plan. You can withdraw it anytime.</div>
-                            <form class="p-4 col-10">
-                                <div class="d-flex flex-column mb-4 gap-3">
-                                    <label>Enter amount</label>
-                                    <div>
-                                        <input type="text" id="disabledTextInput"
-                                            class="placeholder-text-white bg-darkblue2 border-0 form-control text-gray py-2 px-3" value="$8" />
-                                        <div class="text-secondary fs-8 mt-1">
-                                            <i class="bi bi-info-circle-fill me-2"></i>
+                            <div
+                                style="height: calc(100% - 20px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: darkgrey lightgrey;">
+                                <div>Top Up credit</div>
+                                <div class="fs-8 fw-lighter text-gray">Credit will be be used to auto-renew your
+                                    Ironlink
+                                    plan. You can withdraw it anytime.</div>
+                                <form class="p-4 col-10">
+                                    <div class="d-flex flex-column mb-4 gap-3">
+                                        <label>Enter amount</label>
+                                        <div>
+                                            <input type="text" id="disabledTextInput"
+                                                class="placeholder-text-white bg-darkblue2 border-0 form-control text-gray py-2 px-3"
+                                                value="$8" />
+                                            <div class="text-secondary fs-8 mt-1">
+                                                <i class="bi bi-info-circle-fill me-2"></i>
+                                                Card payments under ~$10 are currently disabled.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="mx-5" />
+                                    <div class="my-4">
+                                        <label>Select payment method</label>
+                                        <div class="form-check bg-darkblue2 rounded-2 mt-3">
+                                            <div class="d-flex align-items-center justify-content-between px-3 py-2">
+                                                <div>
+                                                    <input
+                                                        class="form-check-input me-3 border-3 border-white bg-darkblue"
+                                                        type="radio" name="flexRadioDefault">
+                                                    <label class="form-check-label fw-lighter text-gray fs-7"
+                                                        for="flexRadioDefault1">
+                                                        Pay with credit or debit card
+                                                    </label>
+                                                </div>
+                                                <img src="./assets/cards.svg" style="height: 30px;">
+                                            </div>
+                                        </div>
+                                        <div class="text-warning fs-8 mt-1 mb-3">
                                             Card payments under ~$10 are currently disabled.
                                         </div>
-                                    </div>
-                                </div>
-                                <hr class="mx-5" />
-                                <div class="my-4">
-                                    <label>Select payment method</label>
-                                    <div class="form-check bg-darkblue2 rounded-2 mt-3">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    Pay with credit or debit card
-                                                </label>
+                                        <div class="form-check bg-darkblue2 rounded-2 mb-3">
+                                            <div class="d-flex align-items-center justify-content-between px-3 py-2">
+                                                <div>
+                                                    <input
+                                                        class="form-check-input me-3 border-3 border-white bg-darkblue"
+                                                        type="radio" name="flexRadioDefault">
+                                                    <label class="form-check-label fw-lighter text-gray fs-7"
+                                                        for="flexRadioDefault1">
+                                                        USDT/Tether via Polygon lowest fees
+                                                    </label>
+                                                </div>
+                                                <img src="./assets/T.svg" style="height: 30px;">
                                             </div>
-                                            <img src="./assets/cards.svg" style="height: 30px;">
+                                        </div>
+                                        <div class="form-check bg-darkblue2 rounded-2">
+                                            <div class="d-flex align-items-center justify-content-between px-3 py-2">
+                                                <div>
+                                                    <input
+                                                        class="form-check-input me-3 border-3 border-white bg-darkblue"
+                                                        type="radio" name="flexRadioDefault">
+                                                    <label class="form-check-label fw-lighter text-gray fs-7"
+                                                        for="flexRadioDefault1">
+                                                        Any other crypto via your network of choice
+                                                    </label>
+                                                </div>
+                                                <img src="./assets/cryptoicon.svg" style="height: 23px;">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="text-warning fs-8 mt-1 mb-3">
-                                        Card payments under ~$10 are currently disabled.
-                                    </div>
-                                    <div class="form-check bg-darkblue2 rounded-2 mb-3">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    USDT/Tether via Polygon lowest fees
-                                                </label>
-                                            </div>
-                                            <img src="./assets/T.svg" style="height: 30px;">
-                                        </div>
-                                    </div>
-                                    <div class="form-check bg-darkblue2 rounded-2">
-                                        <div class="d-flex align-items-center justify-content-between px-3 py-2">
-                                            <div>
-                                                <input class="form-check-input me-3 border-3 border-white bg-darkblue"
-                                                    type="radio" name="flexRadioDefault">
-                                                <label class="form-check-label fw-lighter text-gray fs-7"
-                                                    for="flexRadioDefault1">
-                                                    Any other crypto via your network of choice
-                                                </label>
-                                            </div>
-                                            <img src="./assets/cryptoicon.svg" style="height: 23px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="mx-5" />
-                                <button class="my-3 btn bg-azure w-100">Proceed To Pay</button>
-                            </form>
+                                    <hr class="mx-5" />
+                                    <button class="my-3 btn bg-azure w-100">Proceed To Pay</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
